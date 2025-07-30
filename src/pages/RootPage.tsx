@@ -4,14 +4,14 @@ import Statebar from "@/components/system/statebar/statebar";
 
 export default function RootPage() {
   return (
-    <main className="h-screen flex flex-col">
-        <header>
+    <main className="h-screen flex flex-col overflow-hidden">
+        <header className="shrink-0" >
             <WindowsNavbar/>
         </header>
-        <main className="h-full">
+        <main className="flex-grow overflow-hidden">
           <PrincipalPage/>
         </main>
-        <footer>
+        <footer className="shrink-0">
           <Statebar/>
         </footer>
     </main>

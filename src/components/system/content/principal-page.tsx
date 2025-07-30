@@ -12,13 +12,13 @@ export default function PrincipalPage() {
 
         {/* Content */}
         <Panel defaultSize={50}>
-
+            
         </Panel>
         <PanelResizeHandle className="border-l"/>
 
         {/* IA */}
         <Panel defaultSize={25}>
-            
+
         </Panel>
     </PanelGroup>
   )

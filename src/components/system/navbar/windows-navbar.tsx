@@ -1,7 +1,10 @@
 import "../../../styles/Navbar.css"
+import BackArrow from "./back-arrow";
 import { NavbarMenubar } from "./navbar-menubar";
+import NextArrow from "./next-arrow";
 import WindowControls from "./windows-controls";
 import { Icon } from "@iconify/react";
+
 
 export default function WindowsNavbar() {
 
@@ -15,12 +18,8 @@ export default function WindowsNavbar() {
             </div>
 
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex gap-2 items-center justify-center no-drag h-full">
-                <button className="rounded-sm hover:bg-accent p-0.5 cursor-pointer">
-                    <Icon icon="formkit:arrowleft" width="22" height="22" />
-                </button>
-                <button className="rounded-sm hover:bg-accent p-0.5 cursor-pointer">
-                    <Icon icon="formkit:arrowright" width="22" height="22" />
-                </button>
+                <BackArrow/>
+                <NextArrow/>
             </div>
 
             <div className="justify-end h-full p-0 m-0 text-muted-foreground no-drag">
